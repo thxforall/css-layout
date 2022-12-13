@@ -1,0 +1,101 @@
+/* 400,600,700,900 */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;900&display=swap");
+
+/* variant */
+:root {
+  --red: #98212b;
+  --white: #e4dfe3;
+  --green: #2c5044;
+}
+
+/* main */
+body {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f6f6f6;
+}
+
+img {
+  width: 180px;
+  position: absolute;
+  right: 200px;
+  top: -85px;
+}
+
+main {
+  position: relative;
+  width: 600px;
+  height: 800px;
+  background-color: #f6f6f4;
+  box-shadow: 15px 10px 25px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  padding: 20px 40px 25px 40px;
+}
+
+/* header */
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  height: 110px;
+  border-bottom: 2px solid black;
+}
+
+.header h1:first-child {
+  font-weight: 900;
+  font-size: 60px;
+}
+
+.header h1:last-child {
+  font-weight: 700;
+  font: 30px;
+}
+
+/* text-section */
+.text-section {
+  margin-top: 10px;
+  font-size: 9px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-section-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-section .text-section-column:nth-child(2) {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+/* circle section */
+section {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 5px 3px;
+}
+
+.red {
+  background-color: var(--red);
+}
+
+.white {
+  background-color: var(--white);
+}
+
+.green {
+  background-color: var(--green);
+}
