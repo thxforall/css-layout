@@ -1,24 +1,16 @@
 .grid {
+  color: white;
   display: grid;
   gap: 5px;
-  height: 50vh;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  place-items: stretch center;
+  grid-template-columns: repeat(auto-fit, minmax(20px, max-content));
+  grid-auto-rows: 100px;
+  margin-bottom: 50px;
 }
 
-.header {
-  background-color: cadetblue;
-}
-
-.content {
-  background-color: firebrick;
-}
-
-.nav {
-  background-color: lavender;
-}
-
-.footer {
+.item:nth-child(odd) {
   background-color: coral;
+}
+
+.item:nth-child(even) {
+  background-color: cornflowerblue;
 }
